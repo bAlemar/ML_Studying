@@ -28,14 +28,14 @@ Matriz N x N , composta pelos valores preditos e os verdadeiros valores.
 acurácia em prever se as pessoas estão #doentes ou não... Entretanto, é exatamente ao contrário, 96% acurácia em prever pessoas não doentes. #Nesse contexto, devemos 
 focar em prever os resultados positivos corretamente. #Desse modo iremos trabalhar com 2 novas métricas: Precision vs Recall.
 
-==============//==============//==============//==============//==============//==============//==============//==============//==============//
+==============//==============//==============//==============//==============//==============
 
 Precision = TP / TP + FP #Quantos casos preditos como positivos, são realmente positivos 90%.Ou seja, 90% da previsão de casos positivos são realmente positivos. 
 Precision é útil quando nossa preocupação maior é em cima dos falsos negativos, ou seja,valores que foram previstos como negativos quando na verdade eram positivos. 
 #Por exemplo, num sistema de recomendação de música,e-commerce etc... devemos focar na Precision,visto que resultados errados podem levar a perde de clientes e 
 prejudicar o negócio.
 
-==============//==============//==============//==============//==============//==============//==============//==============//==============//
+==============//==============//==============//==============//==============//==============
 
 Recall/Sensitivy/TPR = TP / TP + FN
 Quantos casos preditos como positivos o modelo é capaz de prever,ou seja,91% dos valores positivos são previstos pelo nosso modelo. 
@@ -43,18 +43,18 @@ Recall é útil quando Falso Negativo supera o Falso Positivo e principalmente q
 Por exemplo,casos médicos em que é irrelevante dispararmos um alarme falso, entretanto casos positivos não podem passar despercebidos.
 Dado exemplo, a melhor métrica é o recall, visto que não queremos que uma pessoa infectada sai #na rua e infecte a população.
 
-==============//==============//==============//==============//==============//==============//==============//==============//==============//
+==============//==============//==============//==============//==============//==============
 
 Specificity = TN / TN + FP
 #Tipo recall para valores negativos. #Quanto casos preditos como negativos o modelo é capaz de prever.
 
-==============//==============//==============//==============//==============//==============//==============//==============//==============//
+==============//==============//==============//==============//==============//==============
 
 False positive Rate = FP/TN+FP
 #Seria basicamente quantos valores negativos deixamos passar, ou seja, classificamos como positivo sendo que era negativo, em relação ao total de casos negativos na 
 base.
 
-==============//==============//==============//==============//==============//==============//==============//==============//==============//
+==============//==============//==============//==============//==============//==============
 Comentário resultado, do código:
 De início queria analisar como comporta as métricas de accuracy,recall e precision conforme ia desbalanceado as classes. Nesse sentido, nota-se que a métrica de 
 precision, diminuiu gradativamente conforme foi diminuindo nossas classes positivas, visto que nosso FP(erro tipo 1) aumentou gradativamente e além disso a proporção 
