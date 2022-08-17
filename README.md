@@ -20,7 +20,7 @@ Primeiro tópico é ##Matrix Confusion##
 #Accuracy = TP + TN / (TP + FP + TN + FN)
 
 96%
-#OBS : # Temos class imbalanced dataset: 947 targets negatives and only 3 targets positives #Ao calcular accuracy pensamos, nosso modelo tem 96% de acurácia em prever se as pessoas estão #doentes ou não... Entreanto, é exatamente ao contrário, 96% acurácia em prever pessoas não doentes. #Nesse contexto, devemos focar em prever os resultados positivos corretamente. #Desse modo iremos trabalhar com 2 novas métricas: Precision vs Recall.
+#OBS : # Temos class imbalanced dataset: 947 targets negatives and only 3 targets positives #Ao calcular accuracy pensamos, nosso modelo tem 96% de acurácia em prever se as pessoas estão #doentes ou não... Entretanto, é exatamente ao contrário, 96% acurácia em prever pessoas não doentes. #Nesse contexto, devemos focar em prever os resultados positivos corretamente. #Desse modo iremos trabalhar com 2 novas métricas: Precision vs Recall.
 
 ##Precision = TP / TP + FP #Quantos casos preditos como positivos, são realmente positivos #90% #Ou seja, 90% da previsão de casos positivos são realmente positivos. #Precision é útil quando nossa preocupação maior é em cima dos falsos negativos, ou seja #valores que foram previstos como negativos quando na verdade eram positivos. #Por exemplo, num sistema de recomendação de música,e-commerce etc... devemos focar na Precision. #Onde resultados errados podem levar a perde de clientes e prejudicar o negócio.
 
